@@ -1,0 +1,9 @@
+# Download dir
+/download
+
+.DS_STORE
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
