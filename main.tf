@@ -22,7 +22,7 @@ data "external" "this" {
   count = var.use_local ? 1 : 0
 
   program     = ["node", "-e", local.node_resolve_script]
-  working_dir = path.cwd
+  working_dir = var.local_cwd
 }
 
 ############################
