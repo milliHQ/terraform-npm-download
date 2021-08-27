@@ -29,5 +29,5 @@ variable "use_local" {
 variable "local_cwd" {
   type        = string
   description = "Root path where node.resolve should start looking for the local module."
-  default     = path.cwd
+  default     = null
 }
