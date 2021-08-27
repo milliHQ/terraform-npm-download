@@ -25,3 +25,9 @@ variable "use_local" {
   description = "Fallback for using node.resolve for getting the module locally. Usually used for debug."
   default     = false
 }
+
+variable "local_cwd" {
+  type        = string
+  description = "Root path where node.resolve should start looking for the local module."
+  default     = path.cwd
+}
