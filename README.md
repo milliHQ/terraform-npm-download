@@ -17,17 +17,6 @@ A simple module to download files distributed via npm.
 |------|---------|
 | <a name="provider_external"></a> [external](#provider\_external) | >= 1.2.0 |
 
-## Modules
-
-No modules.
-
-## Resources
-
-| Name | Type |
-|------|------|
-| [external_external.download](https://registry.terraform.io/providers/hashicorp/external/latest/docs/data-sources/external) | data source |
-| [external_external.this](https://registry.terraform.io/providers/hashicorp/external/latest/docs/data-sources/external) | data source |
-
 ## Inputs
 
 | Name | Description | Type | Default | Required |
