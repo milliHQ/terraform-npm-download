@@ -6,3 +6,6 @@ sections:
     # No external modules are used, would otherwise show an empty section
     - 'modules'
     - 'resources'
+
+settings:
+  anchor: false
