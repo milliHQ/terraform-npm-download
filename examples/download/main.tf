@@ -1,7 +1,7 @@
 module "npm_download" {
   source = "../.."
 
-  module_name    = "@dealmore/terraform-next-deploy-trigger"
+  module_name    = "@milliHQ/terraform-next-deploy-trigger"
   module_version = "0.1.0"
   path_to_file   = "package.json"
 }

@@ -39,4 +39,4 @@ A simple module to download files distributed via npm.
 
 ## License
 
-Apache-2.0 - see [LICENSE](https://github.com/dealmore/terraform-npm-download/blob/main/LICENSE) for details.
+Apache-2.0 - see [LICENSE](https://github.com/milliHQ/terraform-npm-download/blob/main/LICENSE) for details.
