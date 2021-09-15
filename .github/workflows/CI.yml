@@ -11,13 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: hashicorp/terraform:latest
-      options: '--entrypoint /usr/bin/env'
 
     steps:
       - uses: actions/checkout@v2
 
       - name: Run test
-        run: |
-          cd ./test
-          ls
-          ./run-test.sh
+        run: cd ./test && source ./run-test.sh
