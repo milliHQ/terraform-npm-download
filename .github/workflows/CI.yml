@@ -8,8 +8,6 @@ on:
 
 jobs:
   deploy:
-    needs: build
-
     runs-on: ubuntu-latest
     container:
       image: hashicorp/terraform:latest
