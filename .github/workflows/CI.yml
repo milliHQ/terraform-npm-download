@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  deploy:
+    needs: build
+
+    runs-on: ubuntu-latest
+    container:
+      image: hashicorp/terraform:latest
+      options: '--entrypoint /usr/bin/env'
+
+    steps:
+      - name: Run test
+        run: ./run-test.sh
+        working-directory: ./test
