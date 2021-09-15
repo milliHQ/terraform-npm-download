@@ -17,4 +17,4 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Run test
-        run: cd ./test && source ./run-test.sh
+        run: cd ./test && /bin/bash ./run-test.sh
