@@ -16,4 +16,4 @@ jobs:
     steps:
       - name: Run test
         run: ./run-test.sh
-        working-directory: ./test
+        working-directory: test
