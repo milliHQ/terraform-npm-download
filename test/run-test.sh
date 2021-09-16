@@ -9,6 +9,8 @@ terraform apply -input=false -auto-approve
 
 FIRST_OUTPUT=$(terraform output -json file_missing)
 
+echo "Output: $FIRST_OUTPUT"
+
 ##
 # File should exist on first apply
 ##
