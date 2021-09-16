@@ -19,6 +19,11 @@ echo "here 3"
 
 echo "Output: $output_1"
 
+output_2=$(terraform output -raw file_missing)
+
+echo ""
+echo "Output 2: $output_2"
+
 ##
 # File should exist on first apply
 ##
