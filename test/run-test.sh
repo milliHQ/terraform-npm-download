@@ -2,7 +2,7 @@
 
 # set -e
 
-TF_IN_AUTOMATION='true'
+# TF_IN_AUTOMATION='true'
 
 echo "here 1"
 
@@ -11,7 +11,7 @@ terraform apply -input=false -auto-approve
 
 echo "here 2"
 
-output_1=$(terraform output -json | jq -r '.file_missing.value')
+output_1=$(terraform output -json -no-color | jq -r '.file_missing.value')
 
 echo "here 3"
 
