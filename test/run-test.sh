@@ -10,18 +10,17 @@ terraform init -input=false
 terraform apply -input=false -auto-approve
 
 echo "here 2"
-terraform output -json file_missing
+
+output_1=$(terraform output -json | jq -r '.file_missing.value')
 
 echo "here 3"
 
-test_var=`terraform output -json file_missing`
-
-echo "Output: $test_var"
+echo "Output: $output_1"
 
 ##
 # File should exist on first apply
 ##
-if [ "$test_var" = "true" ]; then
+if [ "$output_1" = "true" ]; then
   echo "File was missing on apply"
   exit 1
 fi
