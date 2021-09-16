@@ -4,10 +4,14 @@ set -e
 
 TF_IN_AUTOMATION='true'
 
+echo "here 1"
+
 terraform init -input=false
 terraform apply -input=false -auto-approve
 
-FIRST_OUTPUT=$(terraform output -json file_missing)
+echo "here 2"
+
+FIRST_OUTPUT=`terraform output -json file_missing`
 
 echo "Output: $FIRST_OUTPUT"
 
