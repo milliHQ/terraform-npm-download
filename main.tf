@@ -11,7 +11,7 @@ locals {
   cdn_module_url     = "${var.cdn_provider_url}${var.module_name}${local.cdn_module_version}/${var.path_to_file}"
   cdn_download_dest  = "${path.module}/download/${var.module_name}/${var.path_to_file}"
 
-  file_path = var.use_local ? data.external.this[0].result.path : local.cdn_download_dest
+  file_path = var.use_local ? data.external.this[0].result.path : data.external.download[0].result.path
 }
 
 #######################################

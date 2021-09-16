@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v1
+
+      - name: Terraform version
+        run: terraform -version
+
+      - uses: actions/checkout@v2
+
+      - name: Run test
+        run: ./run-test.sh
+        working-directory: test
