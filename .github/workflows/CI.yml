@@ -26,7 +26,5 @@ jobs:
         working-directory: test
 
       - name: Run test
-        run: |
-          ls -l
-          ./run-test.sh
+        run: ./run-test.sh
         working-directory: test
