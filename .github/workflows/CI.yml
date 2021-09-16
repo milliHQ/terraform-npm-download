@@ -22,7 +22,7 @@ jobs:
       - name: Show files in test directory
         run: |
           pwd
-          ls -l ./test
+          ls -l
         working-directory: test
 
       - name: Run test
