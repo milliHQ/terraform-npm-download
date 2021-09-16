@@ -11,7 +11,7 @@ terraform apply -input=false -auto-approve
 
 echo "here 2"
 
-output_1=$(terraform output -json -no-color | jq -r '.file_missing.value')
+output_1=$(terraform output file_missing -no-color)
 
 echo "here 3"
 
