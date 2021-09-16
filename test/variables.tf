@@ -1,3 +1,3 @@
 variable "package_version" {
-  type    = string
+  type = string
 }
