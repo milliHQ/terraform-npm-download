@@ -10,6 +10,9 @@ terraform init -input=false
 terraform apply -input=false -auto-approve
 
 echo "here 2"
+terraform output -json file_missing
+
+echo "here 3"
 
 FIRST_OUTPUT=`terraform output -json file_missing`
 

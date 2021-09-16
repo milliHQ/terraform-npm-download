@@ -14,11 +14,10 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
 
-      - uses: actions/checkout@v2
+      - name: Terraform version
+        run: terraform -version
 
-      - name: Show content of the tests script
-        run: cat ./run-test.sh
-        working-directory: test
+      - uses: actions/checkout@v2
 
       - name: Run test
         run: ./run-test.sh
