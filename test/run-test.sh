@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+# set -e
 
 TF_IN_AUTOMATION='true'
 
@@ -14,14 +14,14 @@ terraform output -json file_missing
 
 echo "here 3"
 
-FIRST_OUTPUT=`terraform output -json file_missing`
+test_var=`terraform output -json file_missing`
 
-echo "Output: $FIRST_OUTPUT"
+echo "Output: $test_var"
 
 ##
 # File should exist on first apply
 ##
-if [ "$FIRST_OUTPUT" = "true" ]; then
+if [ "$test_var" = "true" ]; then
   echo "File was missing on apply"
   exit 1
 fi
