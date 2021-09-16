@@ -1,9 +1,9 @@
 module "npm_download" {
-  source = "../.."
+  source = "milliHQ/download/npm"
 
-  module_name    = "@milliHQ/terraform-next-deploy-trigger"
-  module_version = "0.1.0"
-  path_to_file   = "package.json"
+  module_name    = "@millihq/tf-next-image-optimization"
+  module_version = "11.1.2"
+  path_to_file   = "dist.zip"
 }
 
 output "file_path" {
