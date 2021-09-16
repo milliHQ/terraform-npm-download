@@ -21,5 +21,4 @@ jobs:
 
       - name: Run test
         run: ./run-test.sh
-        shell: bash
         working-directory: test
