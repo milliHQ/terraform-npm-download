@@ -29,7 +29,7 @@ FIRST_RUN_SOURCE_CODE_HASH=$("$TF_COMMAND" output -no-color source_code_hash )
 ##
 # File should exist on first apply
 ##
-if [ "$FIRST_RUN_FILE_MISSING" = "true" ] || [ -z "$FIRST_RUN_SOURCE_CODE_HASH" ]; then
+if [ "$FIRST_RUN_FILE_MISSING" == "true" ] || [ -z "$FIRST_RUN_SOURCE_CODE_HASH" ]; then
   echo ""
   echo "Error: File is missing on first apply."
   exit 1
