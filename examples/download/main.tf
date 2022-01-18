@@ -1,6 +1,5 @@
 module "npm_download" {
-  # source = "milliHQ/download/npm"
-  source = "../../"
+  source = "milliHQ/download/npm"
 
   module_name    = "@millihq/tf-next-image-optimization"
   module_version = "11.1.2"
