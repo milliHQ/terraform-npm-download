@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.0 (January 18, 2021)
+
+- Add `rel_path` output for relative path ([#5](https://github.com/milliHQ/terraform-npm-download/issues/5), [#6](https://github.com/milliHQ/terraform-npm-download/pull/6))
+
 ## 2.0.0 (September 16, 2021)
 
 - Uses `curl` instead of `wget` to download the file
