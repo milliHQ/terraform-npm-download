@@ -6,6 +6,10 @@ module "npm_download" {
   path_to_file   = "dist.zip"
 }
 
-output "file_path" {
+output "abs_path" {
   value = module.npm_download.abs_path
+}
+
+output "rel_path" {
+  value = module.npm_download.rel_path
 }

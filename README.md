@@ -53,6 +53,7 @@ output "file_path" {
 | Name | Description |
 |------|-------------|
 | abs\_path | The absolute path to the downloaded file on the local file system. |
+| rel\_path | The cwd based relative path to the downloaded file on the local file system. |
 
 <!--- END_TF_DOCS --->
 <!-- prettier-ignore-end -->
